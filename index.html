@@ -32,7 +32,7 @@ nav {
 }
 nav a {color:white;text-decoration:none;margin:0 10px;}
 
-/* HERO SLIDER */
+/* HERO */
 .hero {
   height:90vh;
   display:flex;
@@ -61,7 +61,7 @@ nav a {color:white;text-decoration:none;margin:0 10px;}
   text-decoration:none;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
   padding:60px 20px;
   max-width:1100px;
@@ -79,38 +79,13 @@ nav a {color:white;text-decoration:none;margin:0 10px;}
   background:white;
   border-radius:10px;
   overflow:hidden;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
-.card img {width:100%;height:180px;object-fit:cover;}
+.card img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
 .card div {padding:15px;}
-
-/* SPONSORS */
-.sponsors {
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  flex-wrap:wrap;
-}
-.sponsors img {
-  width:120px;
-  opacity:0.7;
-}
-
-/* FORM */
-form input,form select,form textarea {
-  width:100%;
-  padding:10px;
-  margin:8px 0;
-  border:1px solid #ccc;
-  border-radius:5px;
-}
-form button {
-  background:var(--primary);
-  color:white;
-  padding:12px;
-  border:none;
-  width:100%;
-}
 
 /* GALLERY */
 .gallery {
@@ -140,7 +115,6 @@ footer {
 
 <body>
 
-<!-- NAV -->
 <nav>
 <strong>WIC Golf Club</strong>
 <div>
@@ -166,17 +140,17 @@ footer {
 <div class="cards">
 
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?women,golf">
-<div><h3>Mission</h3><p>Empower women through networking and golf.</p></div>
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80">
+<div><h3>Mission</h3><p>Empower women through golf networking.</p></div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?female,golfer">
+<img src="https://images.unsplash.com/photo-1505842465776-3ac6e9c2c3f8?auto=format&fit=crop&w=800&q=80">
 <div><h3>Vision</h3><p>Driving inclusion and growth.</p></div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?women,teamwork">
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=800&q=80">
 <div><h3>Values</h3><p>Integrity • Excellence • Collaboration</p></div>
 </div>
 
@@ -189,55 +163,25 @@ footer {
 <div class="cards">
 
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?golf,tournament">
+<img src="https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=800&q=80">
 <div><h3>Golf Day 2026</h3><p>Networking + competition</p></div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/600x400/?business,women">
+<img src="https://images.unsplash.com/photo-1571019613914-85f342c1d4b6?auto=format&fit=crop&w=800&q=80">
 <div><h3>Corporate Tournaments</h3><p>Professional networking</p></div>
 </div>
 
 </div>
 </section>
 
-<!-- SPONSORS -->
-<section class="section">
-<h2>Our Sponsors</h2>
-<div class="sponsors">
-<img src="https://source.unsplash.com/200x100/?logo,company">
-<img src="https://source.unsplash.com/200x100/?brand,logo">
-<img src="https://source.unsplash.com/200x100/?corporate,logo">
-</div>
-</section>
-
-<!-- BOOKING -->
-<section class="section" id="booking">
-<h2>Book Your 4-Ball</h2>
-
-<form action="https://formspree.io/f/mnjolzlp" method="POST">
-<input name="company" placeholder="Company Name" required>
-<input name="contact" placeholder="Contact Person" required>
-<input type="email" name="email" placeholder="Email" required>
-
-<select name="balls">
-<option>Number of 4-balls</option>
-<option>1</option>
-<option>2</option>
-<option>3+</option>
-</select>
-
-<button type="submit">Submit Booking</button>
-</form>
-</section>
-
 <!-- GALLERY -->
 <section class="section">
 <h2>Gallery</h2>
 <div class="gallery">
-<img src="https://source.unsplash.com/400x300/?women,golf,swing">
-<img src="https://source.unsplash.com/400x300/?golf,course">
-<img src="https://source.unsplash.com/400x300/?women,team">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=600&q=80">
+<img src="https://images.unsplash.com/photo-1613573177037-c2a0c1773db8?auto=format&fit=crop&w=600&q=80">
+<img src="https://images.unsplash.com/photo-1620493240890-4c6de3fbd0a1?auto=format&fit=crop&w=600&q=80">
 </div>
 </section>
 
@@ -245,7 +189,7 @@ footer {
 <section class="section">
 <h2>Location</h2>
 <div class="map">
-<iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+<iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&output=embed"></iframe>
 </div>
 </section>
 
@@ -254,25 +198,17 @@ footer {
 <h2>Contact</h2>
 <p>Email: info@wicgolfclub.co.za</p>
 <p>Phone: +27 82 620 9426</p>
-
-<form action="https://formspree.io/f/mnjolzlp" method="POST">
-<input name="name" placeholder="Name">
-<input type="email" name="email" placeholder="Email">
-<textarea name="message" placeholder="Message"></textarea>
-<button type="submit">Send Message</button>
-</form>
 </section>
 
 <footer>
 <p>© 2026 Women in Construction Golf Club</p>
 </footer>
 
-<!-- HERO SLIDER SCRIPT -->
 <script>
 const images = [
-"https://source.unsplash.com/1600x900/?women,golf",
-"https://source.unsplash.com/1600x900/?female,golfer",
-"https://source.unsplash.com/1600x900/?golf,tournament,women"
+"https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=1600&q=80",
+"https://images.unsplash.com/photo-1613573177037-c2a0c1773db8?auto=format&fit=crop&w=1600&q=80",
+"https://images.unsplash.com/photo-1620493240890-4c6de3fbd0a1?auto=format&fit=crop&w=1600&q=80"
 ];
 
 let i = 0;
