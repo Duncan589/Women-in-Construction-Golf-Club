@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WIC Golf Club</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {margin:0;font-family:Poppins;background:#f4f6f9}
+
+/* NAV */
+nav {
+  background:#0a2540;color:#fff;
+  display:flex;justify-content:space-between;
+  padding:15px 30px;position:sticky;top:0;
+}
+nav a {color:white;margin:0 10px;text-decoration:none}
+
+/* HERO */
+.hero {
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1592919505780-303950717480') center/cover;
+  display:flex;align-items:center;justify-content:center;
+  color:white;text-align:center;
+}
+.hero div {background:rgba(0,0,0,0.6);padding:30px;border-radius:10px}
+
+.btn {
+  display:inline-block;margin:10px;padding:12px 20px;
+  background:#ff9800;color:white;border-radius:5px;text-decoration:none;
+}
+
+/* SECTIONS */
+.section {padding:60px 20px;max-width:1100px;margin:auto}
+.section h2 {text-align:center}
+
+/* CARDS */
+.cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card {
+  background:white;border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  overflow:hidden;
+}
+.card img {width:100%;height:180px;object-fit:cover}
+.card div {padding:15px}
+
+/* FORM */
+form input,form textarea,form select {
+  width:100%;padding:10px;margin:8px 0;
+}
+form button {
+  background:#0a2540;color:white;
+  padding:12px;border:none;width:100%;
+}
+
+/* GALLERY */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+.gallery img {width:100%;border-radius:8px}
+
+/* TESTIMONIAL */
+.testimonial {
+  background:white;padding:20px;border-radius:10px;
+  margin:10px 0;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position:fixed;bottom:20px;right:20px;
+  background:#25D366;color:white;
+  padding:15px;border-radius:50%;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+  background:#0a2540;color:white;
+  text-align:center;padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>WIC Golf Club</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Women in Construction Golf Club</h1>
+    <p>Empowering women. Building connections.</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Us</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"><div><h3>Mission</h3><p>Empower women through golf networking.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1571019613914-85f342c1d4b6"><div><h3>Vision</h3><p>Industry leadership & inclusion.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e"><div><h3>Values</h3><p>Integrity • Excellence • Growth</p></div></div>
+</div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+<h2>Events</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1505842465776-3ac6e9c2c3f8"><div><h3>Golf Day 2026</h3></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d"><div><h3>Corporate Tournaments</h3></div></div>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="booking">
+<h2>Book Your 4-Ball</h2>
+
+<form action="https://formspree.io/f/mnjolzlp" method="POST">
+<input type="hidden" name="_subject" value="New Booking Request">
+
+<input name="company" placeholder="Company Name" required>
+<input name="contact" placeholder="Contact Person" required>
+<input type="email" name="email" placeholder="Email" required>
+<input name="phone" placeholder="Phone">
+
+<select name="balls">
+<option>Number of 4-balls</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+</select>
+
+<select name="sponsor">
+<option>Sponsorship Interest</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<button type="submit">Submit Booking</button>
+</form>
+
+<br>
+<a class="btn" href="#">💳 Pay Now</a>
+
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1592919505780-303950717480">
+<img src="https://images.unsplash.com/photo-1505842465776-3ac6e9c2c3f8">
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+<h2>Testimonials</h2>
+
+<div class="testimonial">“An amazing networking platform!” – Corporate Partner</div>
+<div class="testimonial">“Professional and empowering events.” – Member</div>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section">
+<h2>Newsletter Signup</h2>
+
+<form action="https://formspree.io/f/mnjolzlp" method="POST">
+<input type="hidden" name="_subject" value="Newsletter Signup">
+<input type="email" name="email" placeholder="Enter your email">
+<button>Subscribe</button>
+</form>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact</h2>
+
+<p>Email: info@wicgolfclub.co.za</p>
+<p>Phone: +27 82 620 9426</p>
+
+<form action="https://formspree.io/f/mnjolzlp" method="POST">
+<input type="hidden" name="_subject" value="Contact Message">
+
+<input name="name" placeholder="Name">
+<input type="email" name="email" placeholder="Email">
+<textarea name="message" placeholder="Message"></textarea>
+
+<button>Send</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 WIC Golf Club</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/27826209426">💬</a>
+
+</body>
+</html>
