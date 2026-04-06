@@ -3,141 +3,308 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women in Construction Golf Club</title>
 
-<title>Elite Golf Experience</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b1f2a;
-    color: white;
+:root {
+  --primary:#0a2540;
+  --accent:#ff9800;
+  --light:#f4f6f9;
 }
 
-/* NAVBAR */
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:var(--light);
+  color:#333;
+}
+
+/* NAV */
 nav {
-    background: #06202b;
-    padding: 15px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+  background:var(--primary);
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
 }
 
 /* HERO */
 .hero {
-    height: 80vh;
-    background-image: url('https://source.unsplash.com/1600x900/?golf-course');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1592919505780-303950717480') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+.hero .box {
+  background:rgba(0,0,0,0.6);
+  padding:30px;
+  border-radius:10px;
 }
 
-.hero h1 {
-    background: rgba(0,0,0,0.6);
-    padding: 20px;
-    border-radius: 10px;
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 20px;
+  background:var(--accent);
+  color:white;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:500;
 }
 
-/* SERVICES */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px;
-    gap: 20px;
+/* SECTION */
+.section {
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+.section h2 {
+  text-align:center;
+  margin-bottom:20px;
 }
 
+/* CARDS */
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
 .card {
-    width: 300px;
-    background: #123;
-    border-radius: 10px;
-    overflow: hidden;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
-
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width:100%;
+  height:180px;
+  object-fit:cover;
 }
-
-.card h3 {
-    padding: 15px;
+.card div {
+  padding:15px;
 }
 
 /* FORM */
-.form-section {
-    padding: 40px;
-    text-align: center;
+form input,form select,form textarea {
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+form button {
+  background:var(--primary);
+  color:white;
+  padding:12px;
+  border:none;
+  width:100%;
+  border-radius:5px;
 }
 
-input, textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
+/* GALLERY */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+.gallery img {
+  width:100%;
+  border-radius:8px;
 }
 
-button {
-    padding: 12px 25px;
-    background: gold;
-    border: none;
-    cursor: pointer;
+/* TESTIMONIAL */
+.testimonial {
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  margin:10px 0;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:20px;
 }
 
 /* FOOTER */
 footer {
-    background: #06202b;
-    padding: 15px;
-    text-align: center;
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:20px;
 }
 </style>
-
 </head>
 
 <body>
 
-<nav>🏌️ Elite Golf Experience</nav>
+<!-- NAV -->
+<nav>
+  <strong>WIC Golf Club</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
+<!-- HERO -->
 <section class="hero">
-    <h1>Play Like a Pro ⛳</h1>
+  <div class="box">
+    <h1>Women in Construction Golf Club</h1>
+    <p>Empowering women. Building connections. Driving success.</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </div>
 </section>
 
-<section class="services">
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Us</h2>
+<div class="cards">
 
 <div class="card">
-<img src="https://source.unsplash.com/400x300/?golf,training" alt="Golf Coaching">
-<h3>Golf Coaching</h3>
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
+<div>
+<h3>Mission</h3>
+<p>Empower women through networking and golf.</p>
+</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/400x300/?golf,event" alt="Golf Events">
-<h3>Golf Events</h3>
+<img src="https://images.unsplash.com/photo-1571019613914-85f342c1d4b6">
+<div>
+<h3>Vision</h3>
+<p>Driving inclusion and industry growth.</p>
+</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/400x300/?golf,equipment" alt="Golf Equipment">
-<h3>Equipment Hire</h3>
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<div>
+<h3>Values</h3>
+<p>Integrity • Excellence • Collaboration</p>
+</div>
 </div>
 
+</div>
 </section>
 
-<section class="form-section">
-<h2>Book a Session</h2>
+<!-- EVENTS -->
+<section class="section" id="events">
+<h2>Events</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505842465776-3ac6e9c2c3f8">
+<div>
+<h3>Golf Day 2026</h3>
+<p>Networking + competition</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+<div>
+<h3>Corporate Tournaments</h3>
+<p>Professional networking events</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="booking">
+<h2>Book Your 4-Ball</h2>
 
 <form action="https://formspree.io/f/mnjolzlp" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message"></textarea>
+<input type="hidden" name="_subject" value="Booking Request">
+
+<input name="company" placeholder="Company Name" required>
+<input name="contact" placeholder="Contact Person" required>
+<input type="email" name="email" placeholder="Email" required>
+<input name="phone" placeholder="Phone">
+
+<select name="balls">
+<option>Number of 4-balls</option>
+<option>1</option>
+<option>2</option>
+<option>3+</option>
+</select>
+
+<button type="submit">Submit Booking</button>
+</form>
+
 <br>
-<button type="submit">Submit</button>
+<a class="btn" href="#">💳 Pay Now</a>
+
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1592919505780-303950717480">
+<img src="https://images.unsplash.com/photo-1505842465776-3ac6e9c2c3f8">
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+<h2>Testimonials</h2>
+
+<div class="testimonial">“An amazing networking platform!”</div>
+<div class="testimonial">“Professional and empowering events.”</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact</h2>
+
+<p>Email: info@wicgolfclub.co.za</p>
+<p>Phone: +27 82 620 9426</p>
+
+<form action="https://formspree.io/f/mnjolzlp" method="POST">
+<input type="hidden" name="_subject" value="Contact Form">
+
+<input name="name" placeholder="Name">
+<input type="email" name="email" placeholder="Email">
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
 </form>
 
 </section>
 
 <footer>
-© 2026 Elite Golf Experience
+<p>© 2026 Women in Construction Golf Club</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/27826209426">💬</a>
 
 </body>
 </html>
